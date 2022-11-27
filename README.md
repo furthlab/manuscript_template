@@ -1,0 +1,1 @@
+# LaTeX template for  Fürth lab
