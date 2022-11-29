@@ -1,7 +1,7 @@
 ---
 title: Title of my report
 format:
-  furthlab-pdf: default
+  manuscript_template-pdf: default
 cite-method: natbib
 author:
   - name: Jane Doe
