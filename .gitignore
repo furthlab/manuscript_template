@@ -11,3 +11,13 @@
 .aux
 .bbl
 .log
+
+./template.blg
+./template.log
+./template.bbl
+./pnasresearcharticle.sty
+./pnas-new.cls
+./pnas-new.bst
+./jabbrv.sty
+./jabbrv-ltwa-en.ldf
+./jabbrv-ltwa-all.ldf
