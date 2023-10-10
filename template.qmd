@@ -1,7 +1,7 @@
 ---
 title: "Detection of protein-protein interactions by  bio-orthogonal fluorogenic proximity probes"
 format:
-  furthlab-pdf:
+  manuscript_template-pdf:
     keep-tex: true 
     link-citations: true
     cite-method: natbib
