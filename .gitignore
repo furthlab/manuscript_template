@@ -7,3 +7,7 @@
 /template.tex
 /comment.cut
 /.luarc.json
+
+.aux
+.bbl
+.log
