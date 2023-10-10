@@ -7,9 +7,9 @@ $endif$
 \newcommand{\equalcont}{1}
 
 $if(equal-contributor)$
-\newcommand{\correspond}{2}
+\newcommand{\correspond}{\Letter }
 $else$
-\newcommand{\correspond}{1}
+\newcommand{\correspond}{\Letter }
 $endif$
 
 $for(by-author)$
@@ -45,7 +45,7 @@ $endif$
 
 $for(by-author)$
 $if(by-author.attributes.corresponding)$
-\correspondingauthor{\textsuperscript{\correspond}To whom correspondence should be addressed. E-mail: $by-author.email$}
+\correspondingauthor{\textsuperscript{\correspond} Author to whom correspondence should be addressed: $by-author.email$}
 $endif$
 $endfor$
 

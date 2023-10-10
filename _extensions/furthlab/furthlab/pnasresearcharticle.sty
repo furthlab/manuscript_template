@@ -3,6 +3,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{pnasinvited}[2018/05/06 v1.3 PNAS Invited Submission style]
 
+\def\bibfont{\footnotesize}
+
 %% Set whether the abstract is set into the first column
 \setboolean{shortarticle}{true}
 
@@ -10,7 +12,7 @@
 % false = spans page width
 
 %% Set colors
-\definecolor{color2}{RGB}{200,89,45} % color
+\definecolor{color2}{RGB}{0,45,89} % color
 \renewcommand{\abscontent}{
 \noindent
 \parbox{\dimexpr\linewidth}{%
@@ -55,14 +57,16 @@
   \end{authfoot}
 }}
 
+\RequirePackage[misc]{ifsym}
+
 % Author information in a box at the bottom as two floats.
 \RequirePackage{float}
 \floatstyle{plain}
 \newfloat{authfoot}{b!}{auf}
 
 %% Set sans as default font
-\renewcommand{\familydefault}{\sfdefault}
-\renewcommand{\keywordsfont}{\sffamily}
+%\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\keywordsfont}{\sffamily}
 
 % Add line after abstract
 %\appto{\abscontent}{\par\textcolor{color2}{\hrulefill}}
@@ -72,19 +76,19 @@
 
 % ...and section headings
 \titleformat{\section}
-  {\large\sffamily\bfseries\color{color2}}
+  {\large\normalfont\bfseries\color{color2}}
   {\thesection.}
   {0.5em}
   {#1}
   []
 \titleformat{name=\section,numberless}
-  {\large\sffamily\bfseries\color{color2}}
+  {\large\normalfont\bfseries\color{color2}}
   {}
   {0em}
   {#1}
   []
 \titleformat{\subsection}[runin]
-  {\sffamily\bfseries\itshape}
+  {\normalfont\bfseries}
   {\thesubsection.}
   {0.5em}
   {#1. }
@@ -97,7 +101,7 @@
 
 %% Tweaks to footer
 \fancypagestyle{firststyle}{
-   \fancyfoot[R]{\footerfont PNAS\hspace{7pt}|\hspace{7pt}\textbf{\today}\hspace{7pt}|\hspace{7pt}vol. XXX\hspace{7pt}|\hspace{7pt}no. XX\hspace{7pt}|\hspace{7pt}\textbf{\thepage\space of\space\pageref{LastPage}}}
+   \fancyfoot[R]{\footerfont Fürth lab\hspace{7pt}|\hspace{7pt}\textbf{\today}\hspace{7pt}|\hspace{7pt} \hspace{7pt}|\hspace{7pt} \hspace{7pt}|\hspace{7pt}\textbf{\thepage\space of\space\pageref{LastPage}}}
    \fancyfoot[L]{\footerfont\@doi}
 
 \newsavebox{\PNAS@linecount@bx}
@@ -105,7 +109,7 @@
 \newcount\PNAS@linecount
 \PNAS@linecount\@ne\relax
 \def\PNAS@mk@linecount{%
-    \savebox{\PNAS@linecount@bx}[4em][t]{\parbox[t]{4em}{\raggedleft\vskip1pc\sffamily
+    \savebox{\PNAS@linecount@bx}[4em][t]{\parbox[t]{4em}{\raggedleft\vskip1pc\normalfont
         \normalsize
         \setlength{\PNAS@linecount@bxht}{0pt}%
         \loop{\raggedleft\scriptsize\the\PNAS@linecount}\\
@@ -140,7 +144,7 @@
   \end{picture}%
 }
 
-\fancyhead[LO]{\PNAS@linecountLO}
+%\fancyhead[LO]{\PNAS@linecountLO}
 %\fancyhead[RO]{\PNAS@linecountRO}
 %\fancyhead[LE]{\PNAS@linecountLE}
 %\fancyhead[RE]{\PNAS@linecountRE}
@@ -154,7 +158,7 @@
 
 %% Adjust the style of the Materials & Methods section
 \titleformat{\matmethods@section}
-   {\large\sffamily\bfseries\color{color2}}
+   {\large\normalfont\bfseries\color{color2}}
    {}
    {0em}
    {#1}
@@ -169,7 +173,7 @@
 
 %% Adjust the style of the acknowledgments section
 \titleformat{\acknow@section}
-  {\large\sffamily\bfseries\color{color2}}
+  {\large\normalfont\bfseries\color{color2}}
   {}
   {0em}
   {#1}

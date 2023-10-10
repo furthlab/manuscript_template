@@ -40,7 +40,9 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
 \RequirePackage{amsmath,amsfonts,amssymb}
-\RequirePackage{lmodern}
+\RequirePackage{newtxtext}
+\RequirePackage{lmodern} 
+\RequirePackage{mathptmx}
 \RequirePackage[scaled]{helvet}
 %\RequirePackage[T1]{fontenc}
 \RequirePackage{lettrine} % For dropped capitals
@@ -59,26 +61,29 @@
 \RequirePackage[framemethod=tikz]{mdframed}
 
 %% Hyperlinking
-\RequirePackage[colorlinks=true, allcolors=blue]{hyperref}
+\RequirePackage[colorlinks=true, allcolors=blue, citecolor=blue]{hyperref}
 
 %% Set up main title page fonts
 \newcommand{\headerfont}{\normalfont\sffamily\fontsize{7}{9} \selectfont}
 \newcommand{\footerfont}{\normalfont\sffamily\fontsize{7}{9} \selectfont}
-\newcommand{\titlefont}{\fontfamily{lmss}\bfseries\fontsize{22pt}{24pt}\selectfont}
-\newcommand{\dropcapfont}{\fontfamily{lmss}\bfseries\fontsize{26pt}{28pt}\selectfont}
+\newcommand{\titlefont}{\normalfont\bfseries\fontsize{22pt}{24pt}\selectfont}
+\newcommand{\dropcapfont}{\normalfont\bfseries\fontsize{26pt}{28pt}\selectfont}
 \newcommand{\datesfont}{\normalfont\sffamily\fontsize{7}{8}\selectfont}
-\newcommand{\absfont}{\normalfont\sffamily\bfseries\fontsize{8}{11}\selectfont}
+\newcommand{\absfont}{\normalfont\bfseries\fontsize{10.5}{13}\selectfont}
+%\newcommand{\absfont}{\normalfont\sffamily\bfseries\fontsize{8}{11}\selectfont}
 \newcommand{\keywordsfont}{\normalfont\rmfamily\fontsize{7}{10}\selectfont}
 \newcommand{\copyrightfont}{\normalfont\rmfamily\fontsize{6}{8}\selectfont}
 
 %% Set URL link color & font
 \renewcommand\UrlFont{\color{black}\sffamily}
 
+\RequirePackage{placeins}
+
 %% Author and affiliation
 \RequirePackage{authblk}
-\setlength{\affilsep}{8.5pt} % 16.5pts between base of author line and base of affil line
-\renewcommand\Authfont{\color{color0}\normalfont\sffamily\bfseries\fontsize{9}{11}\selectfont}
-\renewcommand\Affilfont{\color{color0}\normalfont\sffamily\fontsize{7}{8}\selectfont}
+\setlength{\affilsep}{16.5pt} % 16.5pts between base of author line and base of affil line
+\renewcommand\Authfont{\color{color0}\normalfont\sffamily\bfseries\fontsize{10}{11}\selectfont}
+\renewcommand\Affilfont{\color{color0}\normalfont\normalfont\fontsize{9}{10}\selectfont}
 
 \renewcommand\AB@affilsepx{; \protect\Affilfont}
 
@@ -140,7 +145,7 @@
                 headsep=-2pt,%
                 footskip=25pt,
                 marginparwidth=38pt]{geometry}
-\RequirePackage[labelfont={bf,sf},%
+\RequirePackage[labelfont=bf,%
                 labelsep=period,%
                 figurename=Fig.]{caption}
 \setlength{\columnsep}{13.5pt} % Distance between the two columns of text
@@ -217,7 +222,7 @@
 
 
 %% Figure caption style
-\DeclareCaptionFormat{pnasformat}{\normalfont\sffamily\fontsize{7}{9}\selectfont#1#2#3}
+\DeclareCaptionFormat{pnasformat}{\color{color1}\normalfont\fontsize{8}{9}\selectfont#1#2#3}
 \captionsetup*{format=pnasformat}
 
 %% Table style
@@ -319,7 +324,7 @@
 COMMANDS WITHIN ABSTRACT^^J^^J}#1\end{#2}
 \gdef\theabstract{\vskip12pt BADLY FORMED ABSTRACT: PLEASE DO
 NOT USE {\tt\string\begin...\string\end} COMMANDS WITHIN
-THE ABSTRACT\vskip12pt}\let\go\relax\fi
+THE ABSTRACT\vskip2pt}\let\go\relax\fi
 \go}
 
 % Define an environment with abstract content and styling
@@ -329,13 +334,7 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
     \vskip3pt%
 	\absfont \theabstract
 }%
-\vskip10pt%
-\noindent
-\parbox{\dimexpr1.35\linewidth}{%
-{
- \keywordsfont \@ifundefined{@keywords}{}{\@keywords}}%
-}
-\vskip12pt%
+
 }
 
 \newcommand{\secondpage}{\@ifstar{\pnaspar}{\parabreak}}
@@ -522,7 +521,7 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
 
 %% Footnotes set up
 \RequirePackage[flushmargin,ragged,symbol*]{footmisc}
-\renewcommand*{\footnotelayout}{\normalfont\sffamily\fontsize{6}{8}\selectfont} % set the footnote font
+\renewcommand*{\footnotelayout}{\normalfont\fontsize{6}{8}\selectfont} % set the footnote font
 \renewcommand{\footnoterule}{% Set the footnote hrule style
   \kern -3pt
   {\color{black50} \hrule width 72pt height 0.25pt}
@@ -535,7 +534,7 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
 \providecommand*{\toclevel@acknow@section}{0}
 % Format is set for research articles by default
 \titleformat{\acknow@section}[runin]
-   {\sffamily\normalsize\bfseries}
+   {\normalfont\normalsize\bfseries}
    {}
    {0em}
    {#1.}
@@ -549,8 +548,32 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
 \newcommand{\showacknow}{% Display acknowledgments section
 \@ifundefined{@acknow}{}{
 \vskip 3.25ex plus 1ex minus .2ex
-\noindent{\sffamily\normalsize\bfseries ACKNOWLEDGMENTS.\hspace{1.5ex plus .2ex}}
+\noindent{\normalfont\normalsize\bfseries ACKNOWLEDGMENTS.\hspace{1.5ex plus .2ex}}
 \small\@acknow}
+}
+
+%% Set up the acknowledgments field
+\titleclass{\supplinfo@section}{straight}[\part]
+\newcounter{supplinfo@section}
+\providecommand*{\toclevel@supplinfo@section}{0}
+% Format is set for research articles by default
+\titleformat{\supplinfo@section}[runin]
+   {\normalfont\normalsize\bfseries}
+   {}
+   {0em}
+   {#1.}
+   []
+\titlespacing{\supplinfo@section}
+	{0pt}
+	{3.25ex plus 1ex minus .2ex}
+	{1.5ex plus .2ex}
+
+
+\newcommand{\showsupplinfo}{% Display acknowledgments section
+\@ifundefined{@supplinfo}{}{
+\vskip 3.25ex plus 1ex minus .2ex
+\noindent{\normalfont\normalsize\bfseries Supplementary.\hspace{1.5ex plus .2ex}}
+\small\@supplinfo}
 }
 
 
