@@ -48,7 +48,7 @@ author:
       equal-contributor: false
       corresponding: true
 abstract: |
-  Detecting protein-protein interactions within cells is challenging. Transgenic approaches risk altering protein function via fluorescent tagging, while _in situ_ methods lack _in vivo_ compatibility. Here we introduce fluorogenic probes with dual-tetrazine pegylated branched arms linked to xanthene dye. Activation requires both tetrazine arms to interact simultaneously with target proteins, enabling dual-substrate recognition. We applied this method using antibodies to detect the c-Myc/Max oncogenic transcription factor complex.
+  Detecting protein-protein interactions within cells is challenging. Transgenic approaches risk altering protein function via fluorescent tagging, while _in situ_ methods lack _in vivo_ compatibility. Here we introduce fluorogenic probes with dual-tetrazine pegylated branched arms linked to xanthene dye. Activation requires both tetrazine arms to interact simultaneously with target proteins, enabling dual-substrate recognition. We applied this method using antibodies to detect the c-Myc/Max oncogenic transcription factor complex as well as the E-cadherin/$\beta$-Catenin cell adhesion complex.
 runningauthor: "One, Two, and Three"
 significance: |
   Authors must submit a 120-word maximum statement about the significance of their research paper written at a level understandable to an undergraduate educated scientist outside their field of speciality. The primary goal of the significance statement is to explain the relevance of the work in broad context to a broad readership. The significance statement appears in the paper itself and is required for all research papers.
@@ -56,8 +56,8 @@ significance: |
 conflict_of_interest: "Conflict of interest: D.F. serves on the scientific advisory board of Navinci Diagnostics AB."
 #equal-contributor: "A.O.(Author One) contributed equally to this work with A.T. (Author Two) (remove if not applicable)."
 #keywords: [protein-protein interaction, fluorogenic, microscopy]
-acknowledgements: | 
-  Please include your acknowledgments here, set in a single paragraph. Please do not include any acknowledgments in the Supporting Information, or anywhere else in the manuscript.
+#acknowledgements: | 
+  #Please include your acknowledgments here, set in a single paragraph. Please do not include any acknowledgments in the Supporting Information, or anywhere else in the manuscript.
 bibliography: bibliography.bib  
 fontsize: "10pt"
 classoption:
@@ -74,22 +74,71 @@ Transgenic techniques offer the distinct advantage of enabling live imaging, all
 What has been lacking is a fluorescent technique that operates independently of transgenic expression of fusion proteins, thus sidestepping potential disruptions in protein function due to tagging, while also addressing sensitivity and reliability challenges typically associated with multi-step enzymatic detection and amplification procedures. A unified detection method capable of functioning effectively in both fixed and living cells would bridge these two prominent methodological categories. The integration of non-enzymatic and bio-orthogonal ligation chemistries with fluorogenic properties presents a promising solution to fulfill this critical need [@devaraj_bioorthogonal_2010].
 
 
-Here we present a method that involves the synthesis of fluorogenic probes, linking a xanthene derivative dye to a branched dual-substrate recognition arm through poly(ethylene glycol) (PEG) linkers. The fluorescence of these probes only activates upon the simultaneous recognition of both arms by their respective targets. Branched PEG linker arms have long enabled researchers to synthesize compounds with multiple terminal functional groups generating superior properties in cellular uptake and biodistribution [@monfardini_branched_1995; @roberts_chemistry_2002]. These arms are structured to position two reactive groups at a precise distance from each other (**Fig. S1a**), facilitating catalysis of the second reactive group when brought into close proximity by the reaction of the first. We utilized branched PEGylation of a fluorophore to bring into close proximity two tetrazines (**Figure 1a**). Tetrazines in these fluorogenic probes play a dual role. Firstly, they serve as diene groups, engaging in an inverse electron-demand Diels–Alder reaction with their target substrate containing a dienophile [@blackman_tetrazine_2008]. Secondly, tetrazines also function as fluorescence quenchers for the fluorophore (**Fig. 1b**).
+Here we present a method that involves the synthesis of fluorogenic probes, linking a xanthene-derivative dye to a branched dual-substrate recognition arm through poly(ethylene glycol) (PEG) linkers. The fluorescence of these probes only activates upon the simultaneous recognition of both arms by their respective targets. Branched PEG linker arms have long enabled researchers to synthesize compounds with multiple terminal functional groups generating superior properties in cellular uptake and biodistribution [@monfardini_branched_1995; @roberts_chemistry_2002]. These arms are structured to position two reactive groups at a precise distance from each other (**\hyperref[fig:S01]{Fig. S1a}**), facilitating catalysis of the second reactive group when brought into close proximity by the reaction of the first. We utilized branched PEGylation of a fluorophore to bring into close proximity two tetrazines (**\hyperref[fig:01]{Figure 1a}**). Tetrazines in these fluorogenic probes play a dual role. Firstly, they serve as diene groups, engaging in an inverse electron-demand Diels–Alder reaction with their target substrate containing a dienophile [@blackman_tetrazine_2008]. Secondly, tetrazines also function as fluorescence quenchers for the fluorophore (**\hyperref[fig:01]{Fig. 1b}**).
 
-Our system boasts a distinctive feature: its inherent bio-orthogonality, achieved through the seamless integration of xanthene derivative dyes, PEG-linkers, and tetrazines. Notably, Janelia Fluor dyes [@grimm_general_2015], a broad subclass of xanthene derivative dyes compatible with our system, demonstrate outstanding photostability and cell permeability, rendering them highly suitable for use in living cells. Furthermore, PEG-linkers, in addition to augmenting cellular uptake, offer stability and in vivo compatibility. Lastly, tetrazines play a pivotal role in bio-orthogonal inverse electron-demand Diels-Alder (iEDDA) “click reactions” [@blackman_tetrazine_2008], ensuring the overall compatibility of the system in living and fixed cells.
+Our system boasts a distinctive feature: its inherent bio-orthogonality, achieved through the seamless integration of xanthene-derivative dyes, PEG-linkers, and tetrazines. Notably, compatible with our system are rhodamine dyes with azetidine rings [@grimm_general_2015], which demonstrate outstanding photostability and cell permeability, rendering them highly suitable for use in living cells. Furthermore, PEG-linkers, in addition to augmenting cellular uptake, offer stability and in vivo compatibility. Lastly, tetrazines play a pivotal role in bio-orthogonal inverse electron-demand Diels-Alder (iEDDA) “click reactions” [@blackman_tetrazine_2008], ensuring the overall compatibility of the system in living and fixed cells. The probes are easily synthesized with common molecular biology equipment through strain-promoted azide-alkyne cycloaddition conjugation of dibenzocyclooctyne-containing fluorophores, yielding a high product yield and eliminating the need for subsequent purification (**\hyperref[fig:S01]{Fig. S1a,c}**).
 
 Prior studies have established that quenching efficiency of tetrazine dyes is significantly affected by the distance between the tetrazine and fluorophore chromophores [@wieczorek_rigid_2014]. 
 Consequently, our initial investigation aimed to assess whether the PEG-linker of our probes introduced an excessive distance between these chromophores, potentially compromising 
-fluorescent turn-on for practical applications. We evaluated quenching of both a green-fluorescent dye (AZDye488, 494/517 nm) as well as a red-fluorescent dye (AZDye594, 590/617 nm). Despite the increased distance introduced by the PEG-arm, both dyes consistently demonstrate potent quenching capabilities (**Fig 1b**), yielding fluorescent quench emission ratios of `r 5.74` and `r 2.88`, respectively (**Fig 1c**). This highlights the system's capability to effectively quench different fluorophores with varying emission spectra, demonstrating the utility of multispectral detection with the system. Importantly, while the addition of the tetrazine-PEG-arm shifted the excitation peak by X nm in both dyes (**Fig. S1b**), the emission peak remained at X and Y respectively (**Fig. 1c**).
+fluorescent turn-on for practical applications. We evaluated quenching of both a green-fluorescent dye (AZDye488, $\textrm λ_{\textrm{abs}}$ 490, $\textrm λ_{\textrm{em}}$ 517 nm) as well as a red-fluorescent dye (AZDye594, $\textrm λ_{\textrm{abs}}$ 590 nm, $\textrm λ_{\textrm{em}}$ 613 nm). Despite the increased distance introduced by the PEG-arm, both dyes consistently demonstrate potent quenching capabilities (**\hyperref[fig:01]{Fig. 1b}**), yielding fluorescent quench emission ratios of `r 5.74` and `r 2.88`, respectively (**\hyperref[fig:01]{Fig. 1c}**). This highlights the system's capability to effectively quench different fluorophores with varying emission spectra, demonstrating the utility of multispectral detection with the system. Importantly, while the addition of the tetrazine-PEG-arm created a small bathochromic shift in the excitation peak by 6 and 3 nm in both dyes ($\textrm λ_{\textrm{abs}}$ 496, $\textrm λ_{\textrm{abs}}$ 593 nm) (**\hyperref[fig:S01]{Fig. S1b}**), the emission peak remained largely unaltered at $\textrm λ_{\textrm{em}}$ 515 nm and $\textrm λ_{\textrm{em}}$ 613 nm respectively (**\hyperref[fig:01]{Fig. 1c}**).
 
 \begin{figure*}[bt!]
+  \label{fig:01}
   \includegraphics[width=\textwidth]{figures/fig01.pdf}
-  \caption{ \textbf{Fluorogenic Proximity (FluoroProx) Probes Enable Dual-Substrate Recognition. a)} Schematic of fluorogenic proximity probes. A branched PEG linker with three arms connects a xanthene-derivative dye to two tetrazines. The energy transfer and quenching of the dye are mitigated only upon reaction of the tetrazine with trans-cyclooctene conjugated antibodies, resulting in rapid fluorogenic activation. \textbf{b)} Quenching of AZDye488 and AZDye594 upon conjugation to PEG1-bis(PEG2-tetrazine), Tz, compared to unquenched, -. \textbf{c)} Emission spectra of AZdye488 and AZdye594 before and after bis-tetrazine quenching. \textbf{d)} Detection of the cMyc/Max transcription factor oncogene complex in PC3 cells. Primary cMyc and Max antibodies are detected by secondary antibodies conjugated to trans-cycloctene (TCO), which serves as the substrate for the branched tetrazine arm's inverse electron-demand reaction. Dual-substrate recognition results in complete unquenching of the fluorescent signal. \textbf{e)} Single primary antibody presence, either cMyc or \textbf{f)} Max, is insufficient to reverse the quenching effect caused by unreacted free tetrazine arms. g) Omission of secondary TCO-antibodies. Green: AZDye594 signal, magenta: Phalloidin-FITC, blue: DAPI. Scale bar: 20 μm. In the schematics of d-g, the indirect antibody staining is omitted for simplicity. h) Quantitative comparison of fluorescent signal with FluoroProx probes compared to traditional immunofluorescence for cMyc/Max in nucleus versus cytosol.}
+  \caption{ \textbf{Fluorogenic Proximity (FluoroProx) Probes Enable Dual-Substrate Recognition. a)} Schematic of fluorogenic proximity probes. A branched PEG linker with three arms connects a xanthene-derivative dye to two tetrazines. The energy transfer and quenching of the dye are mitigated only upon reaction of the tetrazine with trans-cyclooctene conjugated antibodies, resulting in rapid fluorogenic activation. \textbf{b)} Quenching of AZDye488 and AZDye594 upon conjugation to PEG1-bis(PEG2-tetrazine), Tz, compared to unquenched, -. \textbf{c)} Emission spectra of AZdye488 and AZdye594 before and after bis-tetrazine quenching. \textbf{d)} Detection of the cMyc/Max transcription factor oncogene complex in PC3 cells. Primary cMyc and Max antibodies are detected by secondary antibodies conjugated to trans-cycloctene (TCO), which serves as the substrate for the branched tetrazine arm's inverse electron-demand reaction. Dual-substrate recognition results in complete unquenching of the fluorescent signal. \textbf{e)} Single primary antibody presence, either cMyc or \textbf{f)} Max, is insufficient to reverse the quenching effect caused by unreacted free tetrazine arms. \textbf{g)} Omission of secondary TCO-antibodies. Green: AZDye594 signal, magenta: Phalloidin-FITC, blue: DAPI. Scale bar: 20 μm. In the schematics of d-g, the indirect antibody staining is omitted for simplicity. \textbf{h)} Quantitative comparison of fluorescent signal with FluoroProx probes compared to traditional immunofluorescence for cMyc/Max in nucleus versus cytosol. Groups indicate presence of primary antibody. Neg., are negative controls, where all primary antibodies were ommitted, only secondary used (*** $P < 0.001$, n.s. $P > 0.05$). Error bars +/- 1 S.E.M. $n = 689$ cells}
 \end{figure*}
 
-Next, we decided to evaluate the performance of the system by detecting protein-protein interactions directly in fixed cells. We decided to target the the oncogene transcription factor complex cMyc/Max because of its previous utility in evaluating and introducing enzymatic proximity ligation assay to a wider audience [@soderberg_direct_2006]. Furthermore, the complex's unambiguous subcellular localization, primarily within the nucleus, as opposed to each individual protein, which is localized in both the nucleus and cytosol, makes it an ideal candidate for assessing the specificity of our method. Primary antibodies for cMyc and Max were targeted by secondary antibodies conjugated to the dienophile trans-cyclooctene (TCO). After washing, a quick incubation with the pegylated Y-shaped fluorogenic tetrazine probe generated a fluorescent signal restricted to the nucleus (**Fig. 1d**). Importantly, neither cMyc or Max alone (**Fig. 1e-f**) generated a sufficient fluorescent signal, only a slightly higher fluorescence than negative control where primary antibodies were omitted altogether (**Fig. 1g-h**).
+Next, we decided to evaluate the performance of the system by detecting protein-protein interactions directly in fixed cells. We decided to target the the oncogene transcription factor complex cMyc/Max (myc-associated factor X, Max) because of its previous utility in evaluating and introducing enzymatic proximity ligation assay to a wider audience [@soderberg_direct_2006]. Furthermore, the unambiguous subcellular localization of the cMyc/Max complex, primarily within the nucleus, as opposed to each individual protein, which is localized in both the nucleus and cytosol (**\hyperref[fig:S02]{Fig. S2}**), makes it an ideal candidate for assessing the specificity of our method. 
 
-Physical proximity alone doesn't always indicate meaningful interaction. To assess the precision of our assay in distinguishing real interactions from randomly co-localized signals nearby, we decided to replace the antibody targeting myc-associated factor X (Max) with a polyclonal isotype control (IgG rabbit). If our method effectively detects genuine protein-protein interactions, we would expect that cMyc and IgG rabbit antibodies should not yield a substantial signal indicating real interaction. This is because the predominant source of the signal is likely to be interactions with Fc receptors and non-specific binding. 
+```{r echo = FALSE}
+#fluoroprox
+data <- read.table('./data/panel1h.csv', header=TRUE, sep=',')
+fp <- data[data$fluoroprox, ]
+
+#primary = type of antibody primary, region = nucleus or cytosol
+fp <- fp[fp$primary %in% c('Max', 'cMyc:Max'),]
+
+mod1 <- aov(val ~ primary*region, data = fp)
+
+mod1 <- anova( mod1 )
+
+#if/icc, primary = type of antibody primary, region = nucleus or cytosol
+ihc <- data[!data$fluoroprox, ]
+
+#primary = type of antibody primary, region = nucleus or cytosol
+ihc <- ihc[ihc$primary %in% c('Max', 'cMyc:Max'),]
+
+mod2 <- aov(val ~ primary*region, data = ihc)
+
+mod2 <- anova( mod2 )
+
+#function to extract P-value
+p.value <- function(mod, p_value_index) {
+  mod_unlist <- unlist(mod)
+  nfactors <- length(mod$Df) - 1
+  p.values <- mod$`Pr(>F)`
+  degree.of.freedoms <- c(mod$Df[p_value_index], mod$Df[nfactors+1])
+  f.value <- mod$`F value`[p_value_index]
+  f.value <- paste0('$F_{', degree.of.freedoms[1], ',', degree.of.freedoms[2], '} = ', round(f.value,2), '$, ')
+  if (p_value_index <= length(p.values)) {
+    p_value_numeric <- p.values[p_value_index]
+    p_value_string <- ifelse(p_value_numeric < 0.0001, "_P_ < 0.0001", ifelse(p_value_numeric < 0.001, "_P_ < 0.001", ifelse(p_value_numeric < 0.01, "_P_ < 0.01", ifelse(p_value_numeric < 0.05, "_P_ < 0.05", "_P_ > 0.05"))))
+    return(c(p_value_numeric, paste(f.value, p_value_string)))
+  } else {
+    stop("Invalid p-value index")
+  }
+}
+``` 
+
+Since rabbit-raised antibodies are easily accessible for diverse set of targets, we aimed to assess the feasibility of using two rabbit-raised antibodies in a single assay. Using antibodies from separate species could be limiting due to the comparatively smaller pool of available antibodies for non-rabbit species, potentially restricting the range of interactions that can be tested. Rabbit-raised primary antibodies for c-Myc and Max were targeted by secondary antibodies conjugated to the dienophile trans-cyclooctene (TCO, **\hyperref[fig:S01]{Fig. S1e-g}**). After washing, a quick incubation with the pegylated Y-shaped fluorogenic tetrazine probe generated a fluorescent signal restricted to the nucleus (**\hyperref[fig:01]{Fig. 1d}**). This strong fluorogenic turnon was only observed when both antibodies were present (**\hyperref[fig:01]{Fig. 1d-h}**, `r p.value(mod1, 3)[2]`). This is in stark contrast to ordinary immunofluorescence where combining antibodies did not generate an additative signal (`r p.value(mod2, 3)[2]`).
+As expected the c-Myc-Max complex is localized in the nucleus because the heterodimer binds to DNA and acts as a transcription factor. In contrast, individual c-Myc and Max proteins, as visualized by standard immunofluorescence, can be found in both the nucleus and cytosol (**\hyperref[fig:01]{Fig. 1h}, \hyperref[fig:S02]{Fig. S2b-d}**). Importantly, Max is known to form homodimers that can act as transcription factors, but cMyc is unable to form homodimers and requires interaction with Max to form a hetereodimer that acts as a transcription factor. Our method specifically picked up on this distinction since a subset of cells with increased signal when Max primary antibodies was used alone while this was not seen when cMyc was used alone (**\hyperref[fig:01]{Fig. 1h}**). Hence, out method could be used to effectively screen for hetereo and homodimer pairs.
+
+\begin{figure}[!t]
+  \label{fig:02}
+  \includegraphics[width=0.5\textwidth]{figures/fig02.pdf}
+  \caption{ \textbf{FluoroProx Probes Detect Interactions rather than Proximity. a)} Detection of cMyc:Max rabbit IgG primary antibodies. \textbf{b)} Negative control with same immunoglobulin isotype, rabbit IgG, as Max and cMyc. No significant  interaction with cMyc is detected. \textbf{c)} Isotype control, rabbit IgG, alone exhibits same pattern as cMyc:isotype control. Faint granulated signal in the nucleus. Scale bar: 20 μm. \textbf{d)} Quantification of average fluorescent signal intensity in cytosol, dark gray, and nucleus, light gray. }
+\end{figure}
+
 
 ```{r echo = FALSE}
 data <- read.table('./data/IgG.csv', header=TRUE, sep=',')
@@ -105,9 +154,27 @@ isotype <- data$zscore[(!data$cytosol)&(data$groups == 'isotype')]
 
 mod2 <- t.test(cMycIgG, isotype)
 
+mod3 <- t.test(cMycMax, isotype)
 ``` 
 
-We  quantified the fluorescent intensity in the nucleus as well as in the cytosol and the samples where cMyc as well as Max primary antibodies were present (_M_ = `r round(mean(cMycMax),2)`, _SD_ = `r round(sd(cMycMax),2) `) had twice the fluorescent intensity (_t_ = `r round(mod1$statistic, 2)`, P < `r round(mod1$p.value, 6)`) compared to samples that either contained cMyc and isotype control (**Fig. 2b**, _M_ = `r round(mean(cMycIgG),2)`, _SD_ =  `r round(sd(cMycIgG),2)`) or isotype control alone (**Fig. 2c**). Importantly, isotype control alone (_M_ = `r round(mean(isotype),2)`, _SD_ = `r round(mean(isotype),2)`) did not differ significantly from cMyc together with isotype control (_t_ = `r round(mod2$statistic, 2)`, P = `r round(mod2$p.value, 2)`), indicating that the short PEGylated spacer arm provides a necessary maximum distance to be able to distinguish true protein interactions from random interactions by proximity.
+While it is promising that primary antibodies from the same species can be used, this approach presents the potential for non-specific interactions and cross-reactivity. There is a possibility of these antibodies binding to each other due to their shared, similar species-specific epitopes, instead of binding to their intended targets. Such interactions can lead to false-positive results and inaccuracies in data interpretation. To enhance the evaluation of method specificity, we replaced the Max antibody with a rabbit polyclonal IgG isotype control (**\hyperref[fig:02]{Fig. 2}**). We  quantified the fluorescent intensity in the nucleus as well as in the cytosol and samples where both cMyc and Max primary antibodies were used conjoint in staining (_M_ = `r round(mean(cMycMax),2)`, _SD_ = `r round(sd(cMycMax),2) `) had twice the fluorescent intensity (_t_ = `r round(mod1$statistic, 2)`, _P_ < `r round(mod1$p.value, 6)`) compared to samples that were stained by cMyc and isotype control (**\hyperref[fig:02]{Fig. 2b}**, _M_ = `r round(mean(cMycIgG),2)`, _SD_ =  `r round(sd(cMycIgG),2)`) or isotype control alone (**\hyperref[fig:02]{Fig. 2c}**, _t_ = `r round(mod3$statistic, 2)`, _P_ < `r round(mod3$p.value, 6)`). Importantly, isotype control alone (_M_ = `r round(mean(isotype),2)`, _SD_ = `r round(sd(isotype),2)`) did not differ significantly from cMyc together with isotype control (_t_ = `r round(mod2$statistic, 2)`, _P_ = `r round(mod2$p.value, 2)`), indicating that cross-reactivity and unspecific binding is less of a concern.
+
+
+\begin{figure}[!t]
+  \label{fig:03}
+  \includegraphics[width=0.5\textwidth]{figures/fig03.pdf}
+  \caption{ \textbf{Detection of E-cadherin and $\beta$-catenin protein-protein interaction. a)} Detection of E-cad:$\beta$-cat, rabbit IgG and mouse IgG1 primary antibodies. \textbf{b)} Negative control without E-cadherin rabbit IgG primary antibody. \textbf{c)} Negative control without $\beta$-catenin mouse IgG1 primary antibody. Scale bar: 10 μm. Green: FluoroProx AZdye594. Magenta: Phalloidin-Alexa488, Blue: DAPI. }
+\end{figure}
+
+Having observed that our method specifically detects protein-protein interactions subcellularly localized to the cell nucleus we decided to test the method on detection a protein-protein interaction pair localized to a different subcellular compartment. The membraine domain pair E-cadherin and $\beta$-catenin is a highly studied interactions due to its role in epithelial-mesenchymal transition (EMT). We targeted each protein using monoclonal primary antibodies with epitopes close to the site of interaction. In addition, since commercially available unconjugated secondary antibodies are difficult to reliably conjugate with a specific degree of labeling of one molecule per antibody we used secondary single domain antibodies (sdAb), or nanobodies, with a N-terminal cysteine tag that we conjugated using cysteine/maleimide conjugation to TCO-PEG3-maleimide. Using these nanobodies we observed a reliable interaction signal localized to the cell membrane only when both antibodies were present (**\hyperref[fig:03]{Fig. 3}**).
+
+The challenge of detecting protein-protein interactions within cells has long been a bottleneck in understanding cellular processes. Here we introduces a novel approach to tackle this challenge by employing fluorogenic probes with dual-tetrazine pegylated branched arms linked to xanthene dye. The design of these probes addresses the limitations associated with existing methods, providing a promising avenue for in vivo compatibility without altering protein function via fluorescent tagging, while also being compatible with detection of endogenous proteins.
+
+In addition to its current applications, the technology introduced in this study holds great promise for future advancements in the direct tracking of protein-protein interactions as well as protein-ligand interactions within living organisms. The dual-tetrazine pegylated branched arms linked to xanthene dye offer a unique opportunity to study protein-ligand interactions in real-time, providing a potential breakthrough in understanding drug kinetics and interactions directly \emph{in vivo}. The non-invasive nature of the fluorescent probes mitigates concerns associated with altering protein function or cellular processes, making it an ideal candidate for investigating the dynamic interplay between drugs and their target proteins within the complex biological environment. This capability to observe and quantify protein-ligand interactions in living systems has profound implications for drug development, allowing researchers to gain insights into the temporal aspects of drug binding, dissociation, and overall pharmacokinetics. The presented technology, with its dual-substrate recognition mechanism, not only expands our toolbox for studying interactions but also opens up new avenues for advancing our understanding of drug behavior in the intricate milieu of living organisms, ultimately contributing to more informed and targeted drug design strategies.
+
+
+
+<!--  indicating that the short PEGylated spacer arm provides a necessary maximum distance to be able to distinguish true protein interactions from mere proximity. -->
 
 # Material & Methods {.unnumbered}
 
@@ -115,30 +182,54 @@ We  quantified the fluorescent intensity in the nucleus as well as in the cytoso
 Prostate cancer cells (PC3) were cultivated in Advanced DMEM (12491015, Thermofischer Scientific) supplemented with 10% fetal bovine serum (10106-147, Thermofischer Scientific), 5% Pen-Strep (15140-122, Thermofischer Scientific) and 5% L-glutamine (25030-024, Thermofischer Scientific). The cells were incubated at 37°C under a 5% CO2 atmosphere.
 
 ## Fluorogenic probe synthesis  {.unnumbered}
+
 N-(Azido-PEG1)-N-bis(PEG2-Methyltetrazine-propylamine)
-(BP-28748, Broad Pharma Inc.) was dissolved in anhydrous DMSO (276855, Sigma-Aldrich Gmbh) to a stock concentration of 10 mM. Likewise, fluorophore of choice (AZdye488-DBCO or AZdye594-DBCO, 1278-1 or 1298-1 Click Chemistry Tools Inc.) was dissolved in DMSO to a a stock concentration of 10 mM. Initially the pegylated bis-tetrazine arms were conjugated to fluorophore of choice through azide/DBCO Strain-promoted Azide-Alkyne Click (SPAAC) reaction in DMSO at 1:1 molar equivalents for 48h in room temperature. Conjugation was verified by fluorescent quenching of the fluorophore by the tetrazines as well as liquid chromatography–mass spectrometry (LC–MS).
+(BP-28748, Broad Pharma Inc.) was dissolved in anhydrous DMSO (276855, Sigma-Aldrich Gmbh) to a stock concentration of 10 mM. Likewise, fluorophore of choice (AZdye488-DBCO or AZdye594-DBCO, 1278-1 or 1298-1 Click Chemistry Tools Inc.) was dissolved in DMSO to a a stock concentration of 10 mM. Initially the pegylated bis-tetrazine arms were conjugated to fluorophore of choice through azide/DBCO Strain-promoted Azide-Alkyne Click (SPAAC) reaction in DMSO at 1:1 molar equivalents for 24h in room temperature. Conjugation was verified by fluorescent quenching of the fluorophore by the tetrazines as well as liquid chromatography–mass spectrometry (LC–MS).
 
-\begin{figure}[!t]
-  \includegraphics[width=0.5\textwidth]{figures/fig02.pdf}
-  \caption{ \textbf{FluoroProx Probes Detect Interactions rather than Proximity. a)} Detection of cMyc:Max rabbit IgG primary antibodies. \textbf{b)} Negative control with same immunoglobulin isotype, rabbit IgG, as Max and cMyc. No significant  interaction with cMyc is detected. \textbf{c)} Isotype control, rabbit IgG, alone exhibits same pattern as cMyc:isotype control. Faint granulated signal in the nucleus. Scale bar: 20 μm. \textbf{d)} Quantification of average fluorescent signal intensity in cytosol, dark gray, and nucleus, light gray. }
-\end{figure}
+## Antibody conjugation {.unnumbered}
 
-## Liquid chromatography–mass spectrometry (LC–MS) {.unnumbered}
+ First, 80 μL of secondary antibody solution with a concentration of 2 mg/ml was mixed with 20 μL of 0.5 M sodium bicarbonate buffer (0.5 M NaHCO3, pH 8). And then, TFP-PEG4-TCO (1398-2, Click Chemistry Tools Inc.) in dimethyl sulfoxide (DMSO) was added to the mixture. We evaluated the molar ratio of secondary antibody to TFP-ester was set to be 9:1 for optimal conjugation. The solution was kept at room temperature for 1 h. 
+
+80 ul of 2 mg/mL antibody
+add 20 ul of 0.5 M sodium bicarbonate buffer
+you now have 11.1 uM of antibody
+For 9:1 TCO-PEG4-TFP (https://broadpharm.com/product/bp-40298) has a molecular weight of 565.6 g/mol add 88.4017 ul of DMSO for 40 mM.
+
 
 ## Fluorescent spectrophotometry {.unnumbered}
 
-## Antibody conjugation {.unnumbered}
+FluoroProx probes at a stock concentration of 5 mM were diluted in 1xPBS pH 7.5 to a concentration of 2 uM for a total volume of 2.5 mL in polystyrene disposable cuvettes with four clear faces (634-8530, VWR) and emission was measured on a Fluorolog SPEX fluorescence spectrophotometer. Absorbance was measured by UV-Vis spectrophotometry on a .
+
+## Liquid chromatography–mass spectrometry (LC–MS) {.unnumbered}
+
+LC-MS analysis was carried out using electrospray ionization (ESI) and a C18 column (50×3.0 mm, 2.6 μm particle size, 100 Å pore size) with acetonitrile/water in 0.05% aqueous formic acid as mobile phase.
+
+_**MS(ESI)**_, m/z calc’d for C~80~H~86~N~18~O~20~S~2~: 1683.8; found 1697.7 [M+H]^+^, 849.0 [M+2H]^2+^.
+
+_**MS(ESI)**_, m/z calc’d for C~94~H~105~N~18~O~20~S~2~: 1871.1; found 1885.7 [M+H]^+^, 943.1 [M+2H]^2+^.
+
+FluoroProx488 _"AZDye488-DIBOT-PEG1-N-bis(PEG2-Tz)"_ <br>
+
+**6-amino-9-\{2-carboxy-4-[(3-\{3-[13-\{3-[4-(6-methyl-1,2,4,5-tetrazin-3-yl)phenoxy\]propyl\}carbamoyl\)-5-(2-\{2-\{2-({3-\{3-[4-(6-methyl-1,2,4,5-tetrazin-3-yl)phenoxy\]propyl\}carbamoyl\)ethoxy\}ethoxy\}ethyl\)-3,8,11-trioxa-5-azatridecan-1-yl\]-3,4,5,13-tetraazatetracyclo[13.4.0.0^2,6^.0^7,12^]nonadeca-1(19),2(6),4,7,9,11,15,17-octaen-13-yl\}-3-oxopropyl\}carbamoyl\]phenyl\}-3-iminiumyl-5-sulfo-3H-xanthene-4-sulfonate**
+
+![](./figures/fig_S_structureAZdye488.pdf)
+
+FluoroProx594 _"AZDye594-DIBOT-PEG1-N-bis(PEG2-Tz)"_ <br>
+
+**6-\{2-carboxy-4-\[3-\{3-\[13-\{3-\[4-(6-methyl-1,2,4,5-tetrazin-3-yl)phenoxy\]propyl\}carbamoyl\)-5-\{2-\{2-\{3-\[4-(6-methyl-1,2,4,5-tetrazin-3-yl)phenoxy\]propyl\}carbamoyl\}ethoxy\}ethoxy\}ethyl\)-3,8,11-trioxa-5-azatridecan-1-yl\]-3,4,5,13-tetraazatetracyclo[13.4.0.0^2,6^.0^7,12^]nonadeca-1(19),2(6),4,7,9,11,15,17-octaen-13-yl\}-3-oxopropyl\}carbamoyl\]phenyl\}-1,2,2,10,10,11-hexamethyl-4,8-bis(sulfonatomethyl)-2,10-dihydro-1H-13-oxa-1,11-diazapentacen-11-ium**
+
+![](./figures/fig_S_structureAZdye594.pdf)
 
 ## Immunoassay {.unnumbered}
 $7.5 \times 10^3$ PC3 cells were seeded on 35 mm glass bottom dishes (81218, Ibidi). Once the cells reached a confluence of 70%, the growth medium was replaced with 1X PBS (AM9625, Thermofischer scientific) and washed three times in ice cold PBS. The cells were then fixed with PFA (4% v/v Formaldehyde; 28908, Thermofischer Scientific) in 1X PBS for 15 minutes. After fixation cells were washed three times in PBST Triton-X100 ( 0.25% v/v Triton-X100; T8787, Sigma-Aldrich GmBh in 1X PBS) and permeabilized at room temperature for 10 minutes. To remove all traces of  detergent cells were washed three times in 1X PBS. 
 
-Blocking was performed with a goat serum blocking medium (1 % v/v Goat serum; GOA-1A, Capricorn Scientific GmbH, diluted in 1X PBS with 0.1% v/v Tween-20; P9416, Sigma-Aldrich GmBh) for an hour at room temperature. Following this, the blocking medium was washed three times with PBST Tween-20 (0.1% v/v, P9416, Sigma-Aldrich GmBh , in 1X PBS; AM9625, Thermofischer Scientific ) with five minutes of incubation per wash step. The primary antibodies (C-myc Recombinant Rabbit Monoclonal antibody; 27H46L35, Thermo fischer Scientific,  Rabbit polyclonal Anti-Max antibody; HPA003474 , Atlas Antibodies AB) were then diluted 1:500 in 0.1% (w/v) BSA (Bovine Serum Serum Albumin; A9647, Sigma-Aldrich Co in 1X PBS; AM9625, Thermofischer Scientific and 0.1% v/v Tween-20;P9416, Sigma-Aldrich GmBh) and incubated overnight at 4°C on a plate shaker with 300 RPM.
+Blocking was performed with a goat serum blocking medium (1 % v/v Goat serum; GOA-1A, Capricorn Scientific GmbH, diluted in 1X PBS with 0.1% v/v Tween-20; P9416, Sigma-Aldrich GmBh) for an hour at room temperature. Following this, the blocking medium was washed three times with PBST Tween-20 (0.1% v/v, P9416, Sigma-Aldrich GmBh , in 1X PBS; AM9625, Thermofischer Scientific ) with five minutes of incubation per wash step. The primary antibodies (C-myc Recombinant Rabbit Monoclonal antibody; lot: 2561984, 27H46L35, Thermo fischer Scientific,  Rabbit polyclonal Anti-Max antibody; log: A115844, HPA003474, Atlas Antibodies AB) were then diluted 1:500 in 0.1% (w/v) BSA (Bovine Serum Serum Albumin; A9647, Sigma-Aldrich Co in 1X PBS; AM9625, Thermofischer Scientific and 0.1% v/v Tween-20;P9416, Sigma-Aldrich GmBh) and incubated overnight at 4°C on a plate shaker with 300 RPM.
 
-The following day, the cells were washed three times with PBST Tween-20 with five minutes of incubation at room temperature each. Secondary antibodies (Alexa Fluor 488 Chicken Anti-Rabbit IgG (H+L); A21441, Thermo Fischer Scientific) at 1:1000 dilution were incubated in PBST Tween with 0.1% (w/v) BSA. Secondary antibodies were incubated in room temperature for 1 hour. The cells were once again washed in PBST Tween with the same protocol as above, then thoroughly washed in 1X PBS.
+The following day, the cells were washed three times with PBST Tween-20 with five minutes of incubation at room temperature each. Secondary antibodies (Alexa Fluor 488 Chicken Anti-Rabbit IgG (H+L); Lot: 2549869, A21441, Thermo Fischer Scientific) at 1:1000 dilution were incubated in PBST Tween with 0.1% (w/v) BSA. Secondary antibodies were incubated in room temperature for 1 hour. The cells were once again washed in PBST Tween with the same protocol as above, then thoroughly washed in 1X PBS.
 
 ## Fluorogenic Dual-Substrate Recognition Assay   {.unnumbered}
 
-The experimental procedure closely paralleled the methods employed for immunohistochemistry, with a key distinction being the utilization of a goat anti-rabbit secondary antibody (31210, ThermoFisher) conjugated to TCO-PEG4 (1398-2, Click Chemistry Tools Inc.) during the secondary incubation step. After washing, cells were exposed to N-(PEG1-AZdye594)-N-bis(PEG2-Tetrazine) at a concentration of 200 nM in PBST for 20 minutes at room temperature. After this incubation, cells underwent another round of washing and were subsequently counter-stained with phalloidin-FITC and DAPI.
+The experimental procedure closely paralleled the methods employed for immunohistochemistry, with a key distinction being the utilization of a goat anti-rabbit secondary antibody (31210, ThermoFisher) conjugated to TCO-PEG4 (1398-2, Click Chemistry Tools Inc.) during the secondary incubation step. After washing, cells were exposed to FluoroProx probes at a concentration of 200 nM in PBS with XnM of phallodin-FITC and XnM DAPI for 20 minutes at room temperature, covered in foil. Cells were washed for three quick rounds of in PBST Tween-20 followed by three 5 minute PBST washes at 37°C and subsequently stored overnight in PBST at 4°C awaiting imaging. 
 
 ## Image acquisition and processing.  {.unnumbered}
 
@@ -150,10 +241,27 @@ Cells were imaged on a Nikon TE2 equipped with a CrestOptics XLight V3 spinning 
 \setcounter{figure}{0} 
 
 \begin{figure*}
+\label{fig:S01}
 \centering
   \includegraphics[width=0.9\textwidth]{figures/figS01.pdf}
   \caption{ \textbf{Synthesis of FluoroProx Probes. a)} Strain-promoted azide-alkyne cycloaddition (SPAAC) between N-(Azido-PEG1)-N-bis(PEG2-Methyltetrazine-propylamine) (BP-28748, Broad Pharma Inc.) 
 and DBCO (dibenzocyclooctyne) labeled fluorophore (1278, Click Chemistry Tools Inc.) performed in equimolar concentrations in anhydrous DMSO at room temperature overnight.
+\textbf{b)} Absorbance spectrum (excitation) of AZDye488-DBCO and AZDye594-DBCO before and after conjugation to N-(Azido-PEG1)-N-bis(PEG2-Methyltetrazine-propylamine).
+\textbf{c)} Liquid chromatography–mass spectrometry (LC–MS) chromatogram of reactants (AZDye488-DBCO, AZDye594, and N-(Azido-PEG1)-N-bis(PEG2-Methyltetrazine-propylamine)) and products (AZDye488-DIBOT-PEG1-N-bis(PEG2-Tz) and AZDye594-DIBOT-PEG1-N-bis(PEG2-Tz)). Structure of individual molecules shown to the right for clarity.
+\textbf{d)} Mass spectrogram of AZDye488-DIBOT-PEG1-N-bis(PEG2-Tz) and AZDye594-DIBOT-PEG1-N-bis(PEG2-Tz) from LC-MS in c).
+\textbf{e)} TCO-PEG4-TFP Ester used to label primary aliphatic amines on secondary antibodies.
+\textbf{f)} SDS-PAGE of TCO-conjugated antibodies and tetrazine-AZdye488 labeling. Lane 1 commercially conjugated goat secondary antibody. Lane 2: antibody to TCO-PEG4-TFP molar ratio of 1:3. Lane 3: molar ratio of 1:9. Lane 4: molar ratio of 1:15. Lane 5: tetrazine-AZdye488 alone. 
+\textbf{g)} Degree of Labeling (DOL) of TCO-PEG4 conjugated antibodies.
+}
+\end{figure*}
+
+\newpage
+
+\begin{figure*}
+\label{fig:S02}
+\centering
+  \includegraphics[width=\textwidth]{figures/figS02.pdf}
+  \caption{ \textbf{Comparison of IF/ICC to FluoroProx. a)} Immunofluorescence of cMyc using monoclonal rabbit primary antibody visualized by polyclonal goat Alexa488-conjugated secondary antibody (green). Counter stained with DAPI (blue) and Phalloidin-iFluor594 (magenta). 
 \textbf{b)} Absorbance spectrum (excitation) of AZDye488-DBCO and AZDye594-DBCO before and after conjugation to N-(Azido-PEG1)-N-bis(PEG2-Methyltetrazine-propylamine).
 \textbf{c)} Liquid chromatography–mass spectrometry (LC–MS) chromatogram of reactants (AZDye488-DBCO, AZDye594, and N-(Azido-PEG1)-N-bis(PEG2-Methyltetrazine-propylamine)) and products (AZDye488-DIBOT-PEG1-N-bis(PEG2-Tz) and AZDye594-DIBOT-PEG1-N-bis(PEG2-Tz)). Structure of individual molecules shown to the right for clarity.
 \textbf{d)} Mass spectrogram of AZDye488-DIBOT-PEG1-N-bis(PEG2-Tz) and AZDye594-DIBOT-PEG1-N-bis(PEG2-Tz) from LC-MS in c).
