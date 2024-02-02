@@ -198,7 +198,7 @@ For 9:1 TCO-PEG4-TFP (https://broadpharm.com/product/bp-40298) has a molecular w
 
 ## Fluorescent spectrophotometry {.unnumbered}
 
-FluoroProx probes at a stock concentration of 5 mM were diluted in 1xPBS pH 7.5 to a concentration of 2 uM for a total volume of 2.5 mL in polystyrene disposable cuvettes with four clear faces (634-8530, VWR) and emission was measured on a Fluorolog SPEX fluorescence spectrophotometer. Absorbance was measured by UV-Vis spectrophotometry on a .
+FluoroProx probes at a stock concentration of 5 mM were diluted in 1xPBS pH 7.5 to a concentration of 2 uM for a total volume of 2.5 mL in polystyrene disposable cuvettes with four clear faces (634-8530, VWR) and emission was measured on a Fluorolog SPEX TCSPC Horiba fluorescence spectrophotometer (ex. wavelength 488 and 594 nm, 0.1 sec. integration time, 1 nm slit). Absorbance was measured by UV-Vis spectrophotometry on a Denovix DS-11 spectrophotometer.
 
 ## Liquid chromatography–mass spectrometry (LC–MS) {.unnumbered}
 
@@ -233,7 +233,7 @@ The experimental procedure closely paralleled the methods employed for immunohis
 
 ## Image acquisition and processing.  {.unnumbered}
 
-Cells were imaged on a Nikon TE2 equipped with a CrestOptics XLight V3 spinning disc confocal. A fluorescent light source was provided by Lumencor’s CELESTA quattro Light Engines with an arrays of 5 individually addressable solid-state lasers.
+Cells were imaged on a Nikon TE2 equipped with a CrestOptics XLight V3 spinning disc confocal. A fluorescent light source was provided by Lumencor’s CELESTA Quattro Light Engines with an arrays of 5 individually addressable solid-state lasers (Lumencor CELESTA Quattro nIR 5ch with Despeckler, 405/12, 476/12, 545/12, 637/12 and 748/12) and images were acquired with a Kinetix sCMOS Camera (Photometrics) through a oil immersion 100x objective. The spinning disc was equipped with a dichroic mirror 
 
 
 \newpage
