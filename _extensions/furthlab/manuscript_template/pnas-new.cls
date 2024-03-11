@@ -46,6 +46,7 @@
 \RequirePackage[scaled]{helvet}
 %\RequirePackage[T1]{fontenc}
 \RequirePackage{lettrine} % For dropped capitals
+\RequirePackage{adjustbox}
 
 %% For the Significance Statement & footnote on the first page
 \RequirePackage{afterpage}
