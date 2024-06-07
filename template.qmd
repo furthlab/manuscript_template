@@ -6,7 +6,7 @@ format:
     link-citations: true
     cite-method: natbib
 author:
-  - name: Prabash Wijethunga
+  - name: Andreas Torell
     affiliations:
       - name: Department of Immunology, Genetics & Pathology
         id: †
@@ -20,12 +20,7 @@ author:
     affiliations:
       - ref: †
     attributes:
-      equal-contributor: false
-  - name: Andreas Torell
-    affiliations:
-      - ref: †
-    attributes:
-      equal-contributor: false    
+      equal-contributor: false  
   - name: Luke Odell  
     affiliations:
       - name: Department of Medicinal Chemistry
@@ -53,11 +48,10 @@ runningauthor: "One, Two, and Three"
 significance: |
   Authors must submit a 120-word maximum statement about the significance of their research paper written at a level understandable to an undergraduate educated scientist outside their field of speciality. The primary goal of the significance statement is to explain the relevance of the work in broad context to a broad readership. The significance statement appears in the paper itself and is required for all research papers.
 # author_contributions: "Please provide details of author contributions here."
-conflict_of_interest: "Conflict of interest: D.F. serves on the scientific advisory board of Navinci Diagnostics AB."
+conflict_of_interest: "Acknowledgements: We gratefully acknowledge V. Agmo Hernandez for his expert assistance in helping us set up fluorescence spectrophotometry. We thank P. Wijethunga for providing advice and technical help. Conflict of interest: D.F. serves on the scientific advisory board of Navinci Diagnostics AB."
 #equal-contributor: "A.O.(Author One) contributed equally to this work with A.T. (Author Two) (remove if not applicable)."
 #keywords: [protein-protein interaction, fluorogenic, microscopy]
-#acknowledgements: | 
-  #Please include your acknowledgments here, set in a single paragraph. Please do not include any acknowledgments in the Supporting Information, or anywhere else in the manuscript.
+acknowledgements: "We gratefully acknowledge Prabash Wijethunga for his expert assistance in helping us set up fluorescence spectrophotometry. We would also like to express our sincere gratitude to Prabash Wijethunga for his invaluable assistance." 
 bibliography: bibliography.bib  
 fontsize: "10pt"
 classoption:
